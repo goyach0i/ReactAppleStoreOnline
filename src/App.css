@@ -28,7 +28,11 @@ header .con, footer .con {
   width: 1024px;
   min-width: 1024px;
 }
-
+.menu-li {
+  &:hover .sub-menu{
+    display: block;
+  }
+}
 .sub-menu {
   display: none;
 }

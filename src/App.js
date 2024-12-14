@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 const Header = () => {
+
   return (
     <header className="w-full h-11 flex justify-center relative z-20">
       <div className="nav con h-full flex items-center justify-center">
