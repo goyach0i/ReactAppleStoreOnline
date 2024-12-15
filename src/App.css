@@ -40,10 +40,21 @@ header .con, footer .con {
 html {
   background-color: #f5f5f7;
 }
+.search-sub-menu, .shopping-sub-menu {
+  display: block;
+}
+
+.shopping-box.active > .sub-menu {
+  display: block;
+}
 
 .search-box > .sub-menu > .con ul > li > a::before {
   content: '→';
   margin-right: 10px;
+}
+
+input {
+  background-color: transparent;
 }
 
 input:focus {

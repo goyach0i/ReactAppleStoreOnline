@@ -1,7 +1,24 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 const Header = () => {
+  const [isSearch, setIsSearch] = useState(false);
+  const [isShopping, setIsShopping] = useState(false);
+  const searchOpen = () => {
+    if (isSearch === false) {
+      setIsSearch(true);
+    } else {
+      setIsSearch(false);
+    }
+  };
+
+  const shoppingOpen = () => {
+    if (isShopping === false) {
+      setIsShopping(true);
+    } else {
+      setIsShopping(false);
+    }
+  };
 
   return (
     <header className="w-full h-11 flex justify-center relative z-20">
@@ -1364,11 +1381,18 @@ const Header = () => {
               </div>
             </div>
           </li>
-          <li className="search-box block h-full flex items-center px-2 flex-grow">
+          <li
+            onClick={searchOpen}
+            className="search-box block h-full flex items-center px-2 flex-grow"
+          >
             <span className="w-full h-full flex items-center px-3 cursor-pointer justify-center">
               <i className="fas fa-search"></i>
             </span>
-            <div className="sub-menu mx-auto absolute w-full py-11 top-full left-0 z-10 border-b border-gray-200 bg-white">
+          </li>
+          {!isSearch ? (
+            ''
+          ) : (
+            <div className="search-sub-menu mx-auto absolute w-full py-11 top-full left-0 z-10 border-b border-gray-200 bg-white">
               <div className="con mx-auto flex flex-col gap-10">
                 <div className="input-box flex items-center gap-3">
                   <i className="fas fa-search opacity-60"></i>
@@ -1427,12 +1451,16 @@ const Header = () => {
                 </div>
               </div>
             </div>
-          </li>
-          <li className="shopping-box h-full flex items-center px-2 flex-grow">
+          )}
+          <li onClick={shoppingOpen} className="shopping-box h-full flex items-center px-2 flex-grow">
             <span className="w-full h-full flex items-center px-3 cursor-pointer justify-center">
               <i className="fas fa-shopping-bag"></i>
             </span>
-            <div className="sub-menu mx-auto absolute w-full py-11 top-full left-0 z-10 border-b border-gray-200 bg-white">
+          </li>
+          {!isShopping ? (
+            ''
+          ) : (
+            <div className="shopping-sub-menu mx-auto absolute w-full py-11 top-full left-0 z-10 border-b border-gray-200 bg-white">
               <div className="con mx-auto flex flex-col gap-10">
                 <div className="shopping flex flex-col gap-10">
                   <span className="font-bold text-2xl">
@@ -1496,7 +1524,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-          </li>
+          )}
         </ul>
       </div>
     </header>
