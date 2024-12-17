@@ -1542,7 +1542,7 @@ const Store = () => {
       <div className="con mx-auto pt-32 pb-16 flex justify-between">
         <div className="title flex">
           <h1 className="text-4xl font-semibold tracking-tighter leading-snug">
-            <span className="sub-t">스토어.</span>
+            <span className="sub-t">스토어. </span>
             <span className="text-gray-500">
               좋아하는 Apple 제품을
               <br />
@@ -1551,7 +1551,7 @@ const Store = () => {
           </h1>
         </div>
         <div className="search-menu flex flex-col gap-4">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 items-center">
             <img
               className="w-8 h-8"
               src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-chat-specialist-icon-202309?wid=70&hei=70&fmt=jpeg&qlt=90&.v=1701194050282"
@@ -1571,24 +1571,24 @@ const Store = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 items-center">
             <img
               className="w-8 h-9"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/29px-Apple_logo_black.svg.png"
               alt=""
             />
             <div className="flex flex-col">
-              <div className="text-xs font-semibold">
-                쇼핑 지원이 필요하다면?
-              </div>
-              <div>
+              <span className="text-xs font-semibold">
+              Apple Store를 방문하세요
+              </span>
+              <span>
                 <a
                   href="#"
                   className="inquiry text-xs text-blue-600 font-semibold hover:underline"
                 >
-                  스페셜리스트에게 문의하세요
+                  가까운 매장 찾기
                 </a>
-              </div>
+              </span>
             </div>
           </div>
         </div>
@@ -1694,12 +1694,28 @@ const Store = () => {
   );
 };
 
+const Newproduct = () => {
+  return (
+    <>
+      <div className="con mx-auto pt-32 pb-16 flex justify-between">
+        <div className="title flex">
+          <h1 className="text-2xl font-semibold tracking-tighter leading-snug">
+            <span className="sub-t">최신 제품. </span>
+            <span className="text-gray-500">영원히 기억될 언박싱을 위해.</span>
+          </h1>
+        </div>
+      </div>
+    </>
+  );
+};
+
 function App() {
   return (
     <div id="wrap">
       <Header />
       <section className="section-1 w-full">
         <Store />
+        <Newproduct />
       </section>
     </div>
   );
