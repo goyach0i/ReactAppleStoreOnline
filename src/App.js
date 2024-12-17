@@ -7,6 +7,7 @@ const Header = () => {
   const searchOpen = () => {
     if (isSearch === false) {
       setIsSearch(true);
+      setIsShopping(false);
     } else {
       setIsSearch(false);
     }
@@ -15,6 +16,7 @@ const Header = () => {
   const shoppingOpen = () => {
     if (isShopping === false) {
       setIsShopping(true);
+      setIsSearch(false);
     } else {
       setIsShopping(false);
     }
@@ -1452,7 +1454,10 @@ const Header = () => {
               </div>
             </div>
           )}
-          <li onClick={shoppingOpen} className="shopping-box h-full flex items-center px-2 flex-grow">
+          <li
+            onClick={shoppingOpen}
+            className="shopping-box h-full flex items-center px-2 flex-grow"
+          >
             <span className="w-full h-full flex items-center px-3 cursor-pointer justify-center">
               <i className="fas fa-shopping-bag"></i>
             </span>
@@ -1531,10 +1536,171 @@ const Header = () => {
   );
 };
 
+const Store = () => {
+  return (
+    <>
+      <div className="con mx-auto pt-32 pb-16 flex justify-between">
+        <div className="title flex">
+          <h1 className="text-4xl font-semibold tracking-tighter leading-snug">
+            <span className="sub-t">스토어.</span>
+            <span className="text-gray-500">
+              좋아하는 Apple 제품을
+              <br />
+              구입하는 가장 좋은 방법.
+            </span>
+          </h1>
+        </div>
+        <div className="search-menu flex flex-col gap-4">
+          <div className="flex items-center gap-2">
+            <img
+              className="w-8 h-8"
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-chat-specialist-icon-202309?wid=70&hei=70&fmt=jpeg&qlt=90&.v=1701194050282"
+              alt=""
+            />
+            <div className="flex flex-col">
+              <div className="text-xs font-semibold">
+                쇼핑 지원이 필요하다면?
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="inquiry text-xs text-blue-600 font-semibold hover:underline"
+                >
+                  스페셜리스트에게 문의하세요
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <img
+              className="w-8 h-9"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/29px-Apple_logo_black.svg.png"
+              alt=""
+            />
+            <div className="flex flex-col">
+              <div className="text-xs font-semibold">
+                쇼핑 지원이 필요하다면?
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="inquiry text-xs text-blue-600 font-semibold hover:underline"
+                >
+                  스페셜리스트에게 문의하세요
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* 제품들 리스트 */}
+      <div class="con product mx-auto pt-2 pb-16">
+        <ul class="product-list flex items-center">
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-mac-nav-202410?wid=400&hei=260&fmt=png-alpha&.v=1728342368663"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">Mac</span>
+            </a>
+          </li>
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-iphone-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1723857138230"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">iPhone</span>
+            </a>
+          </li>
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=1714168620875"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">iPad</span>
+            </a>
+          </li>
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1724165625838"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">Apple Watch</span>
+            </a>
+          </li>
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-vision-pro-nav-202401?wid=400&hei=260&fmt=png-alpha&.v=1702403595269"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">
+                Apple Vision Pro
+              </span>
+            </a>
+          </li>
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-airpods-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1722974349822"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">AirPods</span>
+            </a>
+          </li>
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=1625783380000"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">AirTag</span>
+            </a>
+          </li>
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=1664628458484"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">Apple TV 4K</span>
+            </a>
+          </li>
+          <li class="w-32 text-center px-4">
+            <a href="#" class="flex flex-col items-center">
+              <img
+                class="block mx-auto pb-4 max-h-20"
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-accessories-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1723738892174"
+                alt=""
+              />
+              <span class="text-sm font-bold hover:underline">액세서리</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+};
+
 function App() {
   return (
     <div id="wrap">
       <Header />
+      <section className="section-1 w-full">
+        <Store />
+      </section>
     </div>
   );
 }

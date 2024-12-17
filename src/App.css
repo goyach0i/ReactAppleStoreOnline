@@ -60,3 +60,23 @@ input {
 input:focus {
   outline: none;
 }
+
+/* 섹션 */
+section .con {
+  width: 1600px;
+}
+
+/* 스토어 */
+.inquiry:hover {
+  text-decoration-line: none;
+}
+
+.inquiry:after {
+  content: '↗';
+  display: inline-block;
+  text-decoration: none;
+}
+
+.product-list > li {
+  min-width: 136px;
+}
