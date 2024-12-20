@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './App.css';
 
 const Header = () => {
@@ -1582,7 +1582,7 @@ const Store = () => {
             />
             <div className="flex flex-col">
               <span className="text-xs font-semibold">
-              Apple Store를 방문하세요
+                Apple Store를 방문하세요
               </span>
               <span>
                 <a
@@ -1698,6 +1698,8 @@ const Store = () => {
 };
 
 const Newproduct = () => {
+  const [slidePx, setSlidePx] = useState(0);
+
   return (
     <>
       <div className="con mx-auto pt-32 pb-16 flex justify-between">
@@ -1707,6 +1709,9 @@ const Newproduct = () => {
             <span className="text-gray-500">영원히 기억될 언박싱을 위해.</span>
           </h1>
         </div>
+      </div>
+      <div className="con mx-auto flex">
+        <ul className="newList relative w-full h-48 bg-red-500"></ul>
       </div>
     </>
   );
