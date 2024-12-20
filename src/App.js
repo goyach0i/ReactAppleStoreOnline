@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import './App.css';
 import Slider from 'react-slick';
+import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './App.css';
 
 const Header = () => {
   const [isSearch, setIsSearch] = useState(false);
@@ -1697,12 +1698,153 @@ const Store = () => {
   );
 };
 
-const Newproduct = () => {
-  const [slidePx, setSlidePx] = useState(0);
+const StyledSlider = styled(Slider)`
+  .slick-prev,
+  .slick-next {
+    width: 50px; /* 화살표 너비 */
+    height: 50px; /* 화살표 높이 */
+    z-index: 1;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 40px; /* 화살표 크기 조정 */
+    color: #000; /* 화살표 색상 */
+  }
+
+  .slick-prev {
+    left: 10px;
+    opacity: ${(props) => (props.hideLeftArrow ? '0' : '1')};
+    pointer-events: ${(props) => (props.hideLeftArrow ? 'none' : 'auto')};
+  }
+
+  .slick-next {
+    right: 10px;
+    opacity: ${(props) => (props.hideRightArrow ? '0' : '1')};
+    pointer-events: ${(props) => (props.hideRightArrow ? 'none' : 'auto')};
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+`;
+
+const SlideItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+  height: 500px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 효과 */
+
+  &:hover {
+    transform: scale(1.025); /* 약간 확대 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 그림자 강화 */
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .caption {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+  }
+`;
+
+const SliderContainer = styled.div`
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 0;
+`;
+
+const slides = [
+  {
+    img: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180965304',
+    caption: 'This is Card 1',
+  },
+  {
+    img: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-vision-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728499365473',
+    caption: 'This is Card 2',
+  },
+  {
+    img: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-s10-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729694064591',
+    caption: 'This is Card 3',
+  },
+  {
+    img: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746398',
+    caption: 'This is Card 4',
+  },
+  {
+    img: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728504973912',
+    caption: 'This is Card 5',
+  },
+  {
+    img: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180987493',
+    caption: 'This is Card 6',
+  },
+];
+
+const CustomSlider = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3, // 한 화면에 3개의 슬라이드 표시
+    slidesToScroll: 1, // 한 번에 하나씩 스크롤
+    draggable: false, // 마우스로 드래그 비활성화
+    swipe: false, // 터치로 슬라이드 비활성화
+    beforeChange: (oldIndex, newIndex) => {
+      setCurrentSlide(newIndex);
+    },
+  };
+  const isAtStart = currentSlide === 0;
+  const isAtEnd = currentSlide === slides.length - settings.slidesToShow;
 
   return (
+    <SliderContainer>
+      <StyledSlider
+        {...settings}
+        hideLeftArrow={isAtStart}
+        hideRightArrow={isAtEnd}
+      >
+        {slides.map((slide, index) => (
+          <SlideItem key={index}>
+            <img src={slide.img} alt={`Slide ${index + 1}`} />
+            <div className="caption">{slide.caption}</div>
+          </SlideItem>
+        ))}
+      </StyledSlider>
+    </SliderContainer>
+  );
+};
+
+const Newproduct = () => {
+  return (
     <>
-      <div className="con mx-auto pt-32 pb-16 flex justify-between">
+      <div className="con mx-auto pt-32 flex justify-between">
         <div className="title flex">
           <h1 className="text-2xl font-semibold tracking-tighter leading-snug">
             <span className="sub-t">최신 제품. </span>
@@ -1711,7 +1853,7 @@ const Newproduct = () => {
         </div>
       </div>
       <div className="con mx-auto flex">
-        <ul className="newList relative w-full h-48 bg-red-500"></ul>
+        <CustomSlider />
       </div>
     </>
   );
