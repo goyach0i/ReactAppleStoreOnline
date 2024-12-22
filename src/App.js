@@ -1697,14 +1697,21 @@ const Store = () => {
   );
 };
 
-const Slider = () => {
+const NewSlider = () => {
   const slides = [
-    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180965304', text: ['슬라이드 1 제목', '슬라이드 1 설명입니다.'] },
-    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-vision-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728499365473', text: ['슬라이드 2 제목', '슬라이드 2 설명입니다.'] },
-    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-s10-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729694064591', text: ['슬라이드 3 제목', '슬라이드 3 설명입니다.'] },
-    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746398', text: ['슬라이드 4 제목', '슬라이드 4 설명입니다.'] },
-    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728504973912', text: ['슬라이드 5 제목', '슬라이드 5 설명입니다.'] },
-    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180987493', text: ['슬라이드 6 제목', '슬라이드 6 설명입니다.'] }
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180965304', text: ['iPhone 16 PRO', 'W1,550,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-vision-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728499365473', text: ['Apple Vision Pro', '공간 컴퓨팅을 소개합니다.', '₩4,990,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-s10-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729694064591', text: ['Apple Watch Series 10', '₩599,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746398', text: ['MacBook Pro', '₩2,390,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728504973912', text: ['iPad mini', '₩749,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180987493', text: ['iPhone 16', '₩1,250,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-mac-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728499365448', text: ['Mac mini', '₩890,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-air-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746150', text: ['iPad Air', '₩899,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-air-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492751837', text: ['MacBook Air', '₩1,390,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492745491', text: ['iPad Pro', '₩1,499,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-ultra-2-202411_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729696247704', text: ['Apple Watch Ultra 2', '₩1,149,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-imac-202411?wid=960&hei=1000&fmt=jpeg&qlt=95&.v=1728499365434', text: ['iMac', '₩1,990,000부터'] },
+    { image: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-se-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492745901', text: ['Apple Watch SE', '₩329,000부터'] },    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -1731,6 +1738,7 @@ const Slider = () => {
             <div className="slide-text">
               <h3>{slide.text[0]}</h3>
               <p>{slide.text[1]}</p>
+              <p>{slide.text[2]}</p>
             </div>
           </div>
         ))}
@@ -1753,7 +1761,7 @@ const Newproduct = () => {
         </div>
       </div>
       <div className="con mx-auto flex">
-        <Slider />
+        <NewSlider />
       </div>
     </>
   );
