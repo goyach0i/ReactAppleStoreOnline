@@ -1840,8 +1840,8 @@ const PlusSlider = () => {
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-s10-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729694064591',
-      text: ['Apple Watch Series 10', '₩599,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-4-anc-select-202409?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1725502639798',
+      text: ['무료 각인','AirPods 4 액티브 노이즈 캔슬링 모델', '₩269,000'],
     },
     {
       image:
