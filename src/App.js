@@ -1826,6 +1826,117 @@ const Newproduct = () => {
   );
 };
 
+const PlusSlider = () => {
+  const Pslides = [
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-engraving-202411?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728511605616',
+      text: ['특별한 이를 위한 특별한 선물.'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-202409-starlight?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1724927451271',
+      text: ['무료 각인', 'AirPods Max - 스타라이트', '₩769,000'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-s10-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729694064591',
+      text: ['Apple Watch Series 10', '₩599,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746398',
+      text: ['MacBook Pro', '₩2,390,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728504973912',
+      text: ['iPad mini', '₩749,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180987493',
+      text: ['iPhone 16', '₩1,250,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-mac-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728499365448',
+      text: ['Mac mini', '₩890,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-air-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746150',
+      text: ['iPad Air', '₩899,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-air-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492751837',
+      text: ['MacBook Air', '₩1,390,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492745491',
+      text: ['iPad Pro', '₩1,499,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-ultra-2-202411_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729696247704',
+      text: ['Apple Watch Ultra 2', '₩1,149,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-imac-202411?wid=960&hei=1000&fmt=jpeg&qlt=95&.v=1728499365434',
+      text: ['iMac', '₩1,990,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-se-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492745901',
+      text: ['Apple Watch SE', '₩329,000부터'],
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goPrev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  const goNext = () => {
+    if (currentIndex < Pslides.length - 3) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  return (
+    <div className="slider">
+      <button className="leftBt" onClick={goPrev} disabled={currentIndex === 0}>
+        &lt;
+      </button>
+      <div className="Pslides">
+        {Pslides.slice(currentIndex, currentIndex + 3).map((Pslides, index) => (
+          <div className="slide" key={index}>
+            <img src={Pslides.image} alt={`Pslides ${index + 1}`} />
+            <div className="slide-text">
+              <h3>{Pslides.text[0]}</h3>
+              <p>{Pslides.text[1]}</p>
+              <p>{Pslides.text[2]}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <button
+        className="rightBt"
+        onClick={goNext}
+        disabled={currentIndex >= Pslides.length - 3}
+      >
+        &gt;
+      </button>
+    </div>
+  );
+};
+
 const Plus = () => {
   return (
     <>
@@ -1838,7 +1949,7 @@ const Plus = () => {
         </div>
       </div>
       <div className="con mx-auto flex">
-        <NewSlider />
+        <PlusSlider />
       </div>
     </>
   );

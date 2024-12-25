@@ -92,14 +92,13 @@ section .con {
   margin: 20px auto;
 }
 
-.Nslides {
+.Nslides, .Pslides {
   width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 10px;
   transition: transform 0.3s ease-in-out;
 }
-
 .slide {
   width: 480px;
   height: 500px;
