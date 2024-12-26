@@ -1701,8 +1701,8 @@ const NewSlider = () => {
   const Nslides = [
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180965304',
-      text: ['iPhone 16 PRO', 'W1,550,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-16-pro-202409?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1726165763242',
+      text: ['iPhone 16 Pro','Apple Intelligence 구동 가능. 각주 ∆', 'W1,550,000부터'],
     },
     {
       image:
@@ -1711,28 +1711,28 @@ const NewSlider = () => {
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-s10-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729694064591',
-      text: ['Apple Watch Series 10', '₩599,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-s10-202409?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1724095131742',
+      text: ['Apple Watch Series 10', '얇아진 두께. 더 커진 존재감.', '₩599,000부터'],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746398',
-      text: ['MacBook Pro', '₩2,390,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-mini-202410_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1728400507038',
+      text: ['MacBook Pro', 'Apple Intelligence 구동 가능. 각주 ∆', '₩2,390,000부터'],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728504973912',
-      text: ['iPad mini', '₩749,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-macbook-pro-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728342374593',
+      text: ['iPad mini', 'Apple Intelligence 구동 가능. 각주 ∆', '₩749,000부터'],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180987493',
-      text: ['iPhone 16', '₩1,250,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-16-202409?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1725661572506',
+      text: ['iPhone 16', 'Apple Intelligence 구동 가능. 각주 ∆', '₩1,250,000부터'],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-mac-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728499365448',
-      text: ['Mac mini', '₩890,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-ultra-202409_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1725655434794',
+      text: ['Mac mini', '블랙으로 계속되는 전력 질주.','₩890,000부터'],
     },
     {
       image:

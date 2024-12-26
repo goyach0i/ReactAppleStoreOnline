@@ -100,7 +100,7 @@ section .con {
   transition: transform 0.3s ease-in-out;
 }
 .slide {
-  width: 480px;
+  width: 400px;
   height: 500px;
   position: relative;
   overflow: hidden;
@@ -110,10 +110,25 @@ section .con {
 }
 
 
+
+MacBook Pro
+Apple Intelligence 구동 가능. 각주 ∆
+₩2,390,000부터
+
+
+iPhone 16
+Apple Intelligence 구동 가능. 각주 ∆
+₩1,250,000부터
+
+
+Apple Watch Ultra 2
+블랙으로 계속되는 전력 질주.
+₩1,149,000부터
+
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .slide-text {
