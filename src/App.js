@@ -1726,8 +1726,8 @@ const NewSlider = () => {
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-16-202409?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1725661572506',
-      text: ['iPhone 16', 'Apple Intelligence 구동 가능. 각주 ∆', '₩1,250,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-macbook-pro-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728342374593',
+      text: ['MacBook Pro', 'Apple Intelligence 구동 가능. 각주 ∆', '₩2,390,000부터'],
     },
     {
       image:
