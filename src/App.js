@@ -1717,11 +1717,6 @@ const NewSlider = () => {
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-mini-202410_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1728400507038',
-      text: ['MacBook Pro', 'Apple Intelligence 구동 가능. 각주 ∆', '₩2,390,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-mini-202410_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1728400507038',
       text: ['iPad mini', 'Apple Intelligence 구동 가능. 각주 ∆', '₩749,000부터'],
     },
     {
@@ -1732,7 +1727,7 @@ const NewSlider = () => {
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-16-202409?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1725661572506',
-      text: ['Mac mini', '블랙으로 계속되는 전력 질주.','₩890,000부터'],
+      text: ['iPhone 16', 'Apple Intelligence 구동 가능. 각주 ∆','₩1,250,000부터'],
     },
     {
       image:
