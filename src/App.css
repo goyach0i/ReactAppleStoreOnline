@@ -109,6 +109,11 @@ section .con {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.slide.highlight .slide-text h3,
+.slide.highlight .slide-text p {
+  color: white; /* 첫 번째 슬라이드 글자 색상 */
+  border-radius: 5px;
+}
 .slide img {
   width: 100%;
   height: 100%;

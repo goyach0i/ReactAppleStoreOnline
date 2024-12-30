@@ -1702,7 +1702,11 @@ const NewSlider = () => {
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-16-pro-202409?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1726165763242',
-      text: ['iPhone 16 Pro','Apple Intelligence 구동 가능. 각주 ∆', 'W1,550,000부터'],
+      text: [
+        'iPhone 16 Pro',
+        'Apple Intelligence 구동 가능. 각주 ∆',
+        'W1,550,000부터',
+      ],
     },
     {
       image:
@@ -1712,52 +1716,93 @@ const NewSlider = () => {
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-s10-202409?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1724095131742',
-      text: ['Apple Watch Series 10', '얇아진 두께. 더 커진 존재감.', '₩599,000부터'],
+      text: [
+        'Apple Watch Series 10',
+        '얇아진 두께. 더 커진 존재감.',
+        '₩599,000부터',
+      ],
     },
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-mini-202410_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1728400507038',
-      text: ['iPad mini', 'Apple Intelligence 구동 가능. 각주 ∆', '₩749,000부터'],
+      text: [
+        'iPad mini',
+        'Apple Intelligence 구동 가능. 각주 ∆',
+        '₩749,000부터',
+      ],
     },
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-macbook-pro-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728342374593',
-      text: ['MacBook Pro', 'Apple Intelligence 구동 가능. 각주 ∆', '₩2,390,000부터'],
+      text: [
+        'MacBook Pro',
+        'Apple Intelligence 구동 가능. 각주 ∆',
+        '₩2,390,000부터',
+      ],
     },
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-16-202409?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1725661572506',
-      text: ['iPhone 16', 'Apple Intelligence 구동 가능. 각주 ∆','₩1,250,000부터'],
+      text: [
+        'iPhone 16',
+        'Apple Intelligence 구동 가능. 각주 ∆',
+        '₩1,250,000부터',
+      ],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-air-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746150',
-      text: ['iPad Air', '₩899,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-ultra-202409_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1725655434794',
+      text: [
+        'Apple Watch Ultra 2',
+        '블랙으로 계속되는 전력 질주.',
+        '₩1,149,000부터',
+      ],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-air-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492751837',
-      text: ['MacBook Air', '₩1,390,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-air-202405?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1713308272877',
+      text: [
+        'iPad Air',
+        'Apple Intelligence 구동 가능. 각주 ∆',
+        '₩899,000부터',
+      ],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492745491',
-      text: ['iPad Pro', '₩1,499,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-mac-mini-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1729266524928',
+      text: [
+        'Mac mini',
+        'Apple Intelligence 구동 가능. 각주 ∆',
+        '₩890,000부터',
+      ],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-ultra-2-202411_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729696247704',
-      text: ['Apple Watch Ultra 2', '₩1,149,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-pro-202405?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1713308272816',
+      text: [
+        'iPad Pro',
+        'Apple Intelligence 구동 가능. 각주 ∆',
+        '₩1,499,000부터',
+      ],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-imac-202411?wid=960&hei=1000&fmt=jpeg&qlt=95&.v=1728499365434',
-      text: ['iMac', '₩1,990,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-macbook-air-202402?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1707259289595',
+      text: [
+        'MacBook Air',
+        'Apple Intelligence 구동 가능. 각주 ∆',
+        '₩1,390,000부터',
+      ],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-se-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492745901',
-      text: ['Apple Watch SE', '₩329,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-imac-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728341291219',
+      text: ['iMac', 'Apple Intelligence 구동 가능. 각주 ∆', '₩1,990,000부터'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-se-202412_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1733898825090',
+      text: ['Apple Watch SE', '부담 없이 빠져들다.', '₩329,000부터'],
     },
   ];
 
@@ -1781,16 +1826,30 @@ const NewSlider = () => {
         &lt;
       </button>
       <div className="Nslides">
-        {Nslides.slice(currentIndex, currentIndex + 3).map((Nslides, index) => (
-          <div className="slide" key={index}>
-            <img src={Nslides.image} alt={`Nslides ${index + 1}`} />
-            <div className="slide-text">
-              <h3>{Nslides.text[0]}</h3>
-              <p>{Nslides.text[1]}</p>
-              <p>{Nslides.text[2]}</p>
+        {Nslides.slice(currentIndex, currentIndex + 3).map((slide, index) => {
+          const actualIndex = currentIndex + index;
+
+          const isHighlighted =
+            actualIndex === 0 ||
+            actualIndex === 4 ||
+            actualIndex === 5 ||
+            actualIndex === 6 ||
+            actualIndex === 9;
+
+          return (
+            <div
+              className={`slide ${isHighlighted ? 'highlight' : ''}`}
+              key={index}
+            >
+              <img src={slide.image} alt={`Slide ${actualIndex + 1}`} />
+              <div className="slide-text">
+                <h3>{slide.text[0]}</h3>
+                <p>{slide.text[1]}</p>
+                <p>{slide.text[2]}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <button
         className="rightBt"
@@ -1836,7 +1895,7 @@ const PlusSlider = () => {
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-4-anc-select-202409?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1725502639798',
-      text: ['무료 각인','AirPods 4 액티브 노이즈 캔슬링 모델', '₩269,000'],
+      text: ['무료 각인', 'AirPods 4 액티브 노이즈 캔슬링 모델', '₩269,000'],
     },
     {
       image:
