@@ -1899,53 +1899,8 @@ const PlusSlider = () => {
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746398',
-      text: ['MacBook Pro', '₩2,390,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728504973912',
-      text: ['iPad mini', '₩749,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729180987493',
-      text: ['iPhone 16', '₩1,250,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-mac-mini-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728499365448',
-      text: ['Mac mini', '₩890,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-air-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492746150',
-      text: ['iPad Air', '₩899,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-macbook-air-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492751837',
-      text: ['MacBook Air', '₩1,390,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-pro-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492745491',
-      text: ['iPad Pro', '₩1,499,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-ultra-2-202411_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729696247704',
-      text: ['Apple Watch Ultra 2', '₩1,149,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-imac-202411?wid=960&hei=1000&fmt=jpeg&qlt=95&.v=1728499365434',
-      text: ['iMac', '₩1,990,000부터'],
-    },
-    {
-      image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-se-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728492745901',
-      text: ['Apple Watch SE', '₩329,000부터'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-genius-202108?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1626375544000',
+      text: ['　','Genius Bar에서 직접 전문가의 도움을 받을 수 있습니다.'],
     },
   ];
 
