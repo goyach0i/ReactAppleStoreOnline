@@ -124,7 +124,7 @@ section .con {
   position: absolute;
   top: 5%;
   left: 5%;
-  width: 100%;
+  width: 340px;
   padding: 10px;
   color: white;
 }
@@ -145,6 +145,31 @@ section .con {
   transform: scale(1.01);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+.Pslides > .slide {
+  width: 480px;
+  height: 500px;
+}
+
+.Pslides > .slide > .slide-text{
+  width: 435px;
+}
+
+.Pslides > .slide > .slide-text h3 {
+  font-size: 12px;
+}
+
+.Pslides > .slide > .slide-text p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Pslides > .slide > .slide-text p:nth-child(3) {
+  font-size: 12px;
+}
+
+
+
 
 button {
   padding: 10px 20px;

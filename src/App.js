@@ -1884,18 +1884,18 @@ const PlusSlider = () => {
   const Pslides = [
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-engraving-202411?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728511605616',
-      text: ['특별한 이를 위한 특별한 선물.'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-specialist-help-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728571564886',
+      text: ['APPLE 스페셜리스트','스페셜리스트와 함께하는 일대일 온라인 쇼핑.'],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-202409-starlight?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1724927451271',
-      text: ['무료 각인', 'AirPods Max - 스타라이트', '₩769,000'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-TAA-202310?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1697149577145',
+      text: ['TODAY AT APPLE', 'Apple Store의 무료 세션에 참여해 보세요.', '최신 기능과 더불어 Apple 기기를 더욱 심도 있게 활용하는 법을 알아보세요.'],
     },
     {
       image:
-        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-4-anc-select-202409?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1725502639798',
-      text: ['무료 각인', 'AirPods 4 액티브 노이즈 캔슬링 모델', '₩269,000'],
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-personal-setup-202408_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729720054089',
+      text: ['일대일 가이드', '새로 산 기기와 더 친숙해지고 싶다면? 개인 맞춤 설정 세션에 참여해보세요.', '설정 및 데이터 전송 방법부터 최신 기능 사용법까지 온라인 세션에서 배워보세요.'],
     },
     {
       image:
