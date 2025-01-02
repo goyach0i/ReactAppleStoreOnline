@@ -92,7 +92,7 @@ section .con {
   margin: 20px auto;
 }
 
-.Nslides, .Pslides {
+.Nslides, .Hslides {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -146,30 +146,27 @@ section .con {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.Pslides > .slide {
+.Hslides > .slide {
   width: 480px;
   height: 500px;
 }
 
-.Pslides > .slide > .slide-text{
+.Hslides > .slide > .slide-text{
   width: 435px;
 }
 
-.Pslides > .slide > .slide-text h3 {
+.Hslides > .slide > .slide-text h3 {
   font-size: 12px;
 }
 
-.Pslides > .slide > .slide-text p {
+.Hslides > .slide > .slide-text p {
   font-size: 20px;
   font-weight: bold;
 }
 
-.Pslides > .slide > .slide-text p:nth-child(3) {
+.Hslides > .slide > .slide-text p:nth-child(3) {
   font-size: 12px;
 }
-
-
-
 
 button {
   padding: 10px 20px;

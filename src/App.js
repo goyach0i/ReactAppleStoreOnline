@@ -1880,8 +1880,8 @@ const Newproduct = () => {
   );
 };
 
-const PlusSlider = () => {
-  const Pslides = [
+const HelpSlider = () => {
+  const Hslides = [
     {
       image:
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-specialist-help-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728571564886',
@@ -1913,7 +1913,7 @@ const PlusSlider = () => {
   };
 
   const goNext = () => {
-    if (currentIndex < Pslides.length - 3) {
+    if (currentIndex < Hslides.length - 3) {
       setCurrentIndex(currentIndex + 1);
     }
   };
@@ -1923,14 +1923,14 @@ const PlusSlider = () => {
       <button className="leftBt" onClick={goPrev} disabled={currentIndex === 0}>
         &lt;
       </button>
-      <div className="Pslides">
-        {Pslides.slice(currentIndex, currentIndex + 3).map((Pslides, index) => (
+      <div className="Hslides">
+        {Hslides.slice(currentIndex, currentIndex + 3).map((Hslides, index) => (
           <div className="slide" key={index}>
-            <img src={Pslides.image} alt={`Pslides ${index + 1}`} />
+            <img src={Hslides.image} alt={`Pslides ${index + 1}`} />
             <div className="slide-text">
-              <h3>{Pslides.text[0]}</h3>
-              <p>{Pslides.text[1]}</p>
-              <p>{Pslides.text[2]}</p>
+              <h3>{Hslides.text[0]}</h3>
+              <p>{Hslides.text[1]}</p>
+              <p>{Hslides.text[2]}</p>
             </div>
           </div>
         ))}
@@ -1938,7 +1938,7 @@ const PlusSlider = () => {
       <button
         className="rightBt"
         onClick={goNext}
-        disabled={currentIndex >= Pslides.length - 3}
+        disabled={currentIndex >= Hslides.length - 3}
       >
         &gt;
       </button>
@@ -1946,23 +1946,38 @@ const PlusSlider = () => {
   );
 };
 
-const Plus = () => {
+const Help = () => {
   return (
     <>
       <div className="con mx-auto pt-32 flex justify-between">
         <div className="title flex">
           <h1 className="text-2xl font-semibold tracking-tighter leading-snug">
-            <span className="sub-t">개성 더하기. </span>
+            <span className="sub-t">도움의 손길. </span>
             <span className="text-gray-500">특별한 선물, 훈훈함까지 담아.</span>
           </h1>
         </div>
       </div>
       <div className="con mx-auto flex">
-        <PlusSlider />
+        <HelpSlider />
       </div>
     </>
   );
 };
+
+const Singular = () => {
+  return (
+    <>
+      <div className="con mx-auto pt-32 flex justify-between">
+        <div className="title flex">
+          <h1 className="text-2xl font-semibold tracking-tighter leading-snug">
+            <span className="sub-t">남다른 Apple Store. </span>
+            <span className="text-gray-500">이곳에서 쇼핑해야 하는 더욱더 많은 이유.</span>
+          </h1>
+        </div>
+      </div>
+    </>
+  )
+}
 
 function App() {
   return (
@@ -1971,7 +1986,8 @@ function App() {
       <section className="section-1 w-full">
         <Store />
         <Newproduct />
-        <Plus />
+        <Help />
+        <Singular />
       </section>
     </div>
   );
