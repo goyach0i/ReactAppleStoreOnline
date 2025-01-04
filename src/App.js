@@ -1964,6 +1964,72 @@ const Help = () => {
   );
 };
 
+const SingularSlider = () => {
+  const Hslides = [
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-specialist-help-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728571564886',
+      text: ['APPLE 스페셜리스트','스페셜리스트와 함께하는 일대일 온라인 쇼핑.'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-TAA-202310?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1697149577145',
+      text: ['TODAY AT APPLE', 'Apple Store의 무료 세션에 참여해 보세요.', '최신 기능과 더불어 Apple 기기를 더욱 심도 있게 활용하는 법을 알아보세요.'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-personal-setup-202408_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729720054089',
+      text: ['일대일 가이드', '새로 산 기기와 더 친숙해지고 싶다면? 개인 맞춤 설정 세션에 참여해보세요.', '설정 및 데이터 전송 방법부터 최신 기능 사용법까지 온라인 세션에서 배워보세요.'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-genius-202108?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1626375544000',
+      text: ['　','Genius Bar에서 직접 전문가의 도움을 받을 수 있습니다.'],
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goPrev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  const goNext = () => {
+    if (currentIndex < Hslides.length - 3) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  return (
+    <div className="slider">
+      <button className="leftBt" onClick={goPrev} disabled={currentIndex === 0}>
+        &lt;
+      </button>
+      <div className="Hslides">
+        {Hslides.slice(currentIndex, currentIndex + 5).map((Hslides, index) => (
+          <div className="slide SingularDv" key={index}>
+            <img src={Hslides.image} alt={`Pslides ${index + 1}`} />
+            <div className="slide-text">
+              <h3>{Hslides.text[0]}</h3>
+              <p>{Hslides.text[1]}</p>
+              <p>{Hslides.text[2]}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <button
+        className="rightBt"
+        onClick={goNext}
+        disabled={currentIndex >= Hslides.length - 3}
+      >
+        &gt;
+      </button>
+    </div>
+  );
+};
+
 const Singular = () => {
   return (
     <>
@@ -1974,6 +2040,9 @@ const Singular = () => {
             <span className="text-gray-500">이곳에서 쇼핑해야 하는 더욱더 많은 이유.</span>
           </h1>
         </div>
+      </div>
+      <div className="con mx-auto flex">
+        <SingularSlider />
       </div>
     </>
   )
