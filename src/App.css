@@ -112,12 +112,6 @@ section .con {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.SingularDv {
-  width: 310px;
-  height: 240px;
-}
-
 .slide.highlight .slide-text h3,
 .slide.highlight .slide-text p {
   color: white; /* 첫 번째 슬라이드 글자 색상 */

@@ -1986,6 +1986,16 @@ const SingularSlider = () => {
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-genius-202108?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1626375544000',
       text: ['　','Genius Bar에서 직접 전문가의 도움을 받을 수 있습니다.'],
     },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-genius-202108?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1626375544000',
+      text: ['　','Genius Bar에서 직접 전문가의 도움을 받을 수 있습니다.'],
+    },
+    {
+      image:
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-genius-202108?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1626375544000',
+      text: ['　','Genius Bar에서 직접 전문가의 도움을 받을 수 있습니다.'],
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -2008,8 +2018,8 @@ const SingularSlider = () => {
         &lt;
       </button>
       <div className="Hslides">
-        {Hslides.slice(currentIndex, currentIndex + 5).map((Hslides, index) => (
-          <div className="slide SingularDv" key={index}>
+        {Hslides.slice(currentIndex, currentIndex + 4).map((Hslides, index) => (
+          <div className="slide !w-[310px] !h-[240px]" key={index}>
             <img src={Hslides.image} alt={`Pslides ${index + 1}`} />
             <div className="slide-text">
               <h3>{Hslides.text[0]}</h3>
